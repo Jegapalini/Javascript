@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Squared Numbers</title>
+</head>
+<body>
+    <h1>Sum of Squared Numbers</h1>
+    <p>Check the console for the result.</p>
+    <script>
+
+        // Function to sum the squares of numbers in a mixed array
+function sumOfSquaredNumbers(arr) {
+    return arr
+        .filter(item => typeof item === 'number') // Filter out non-number items
+        .reduce((sum, num) => sum + num * num, 0); // Square the numbers and sum them
+}
+
+// Sample array with mixed data types
+const array = [4, 'Hello', 3, 'true', 'uki', 5];
+
+// Call the function with the sample array and store the result
+const result = sumOfSquaredNumbers(array);
+
+// Log the result to the console
+console.log(result); // Output: 50
+
+    </script>
+</body>
+</html>

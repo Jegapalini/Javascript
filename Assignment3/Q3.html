@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function removeEmptyStrings(arr) {
+    return arr.filter(str => str !== "");
+}
+
+const strings = ["hello", "", "world", "", "javascript"];
+const result = removeEmptyStrings(strings);
+console.log(result); // Output: ["hello", "world", "javascript"]
+
+    </script>
+</body>
+</html>
